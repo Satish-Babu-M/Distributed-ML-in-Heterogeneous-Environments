@@ -1,7 +1,6 @@
-# Empowering Edge Systems : Distrubuted Machine LEarning in Heterogeneous Environments  
+# Empowering Edge Systems : Distrubuted Machine Learning in Heterogeneous Environments  
 This distributed training method is critical for handling sensitive or extensive data locally without the inefficiencies and privacy concerns of central cloud processing. Instead of transmitting all data to a central server, edge devices compute model updates locally and share only parameter updates, significantly reducing bandwidth requirements and enhancing data privacy.  
 
-------------------------------------------------------------
 
 # Description
 The algorithm which we implemented was **Adaptive Synchronous Parallel (ADSP)**   
@@ -14,7 +13,6 @@ The system comprises two main modules:
 1) A novel synchronization model that allows faster systems to train more before each update, while ensuring uniform commit rates across all workers.  
 2) A global commit rate search algorithm that determines the optimal commit rate for all workers to facilitate rapid convergence.  
 
----
 
 # ADSP Workflow  
         Task A1    Task B1    Task C1
@@ -28,7 +26,6 @@ The system comprises two main modules:
           v          v          v
         Synchronization Point 2  
 
----
 
 # ADSP Algorithm and Analysis
 ![image](https://github.com/Satish-Babu-M/Distributed-ML-in-Heterogeneous-Environments/assets/167501522/d5c19dfd-d34d-4029-b559-54e4c10d8490)  
